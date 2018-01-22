@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="900sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="55sp"
+            android:text="@string/text_atTheTop"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/image_ball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ball3" />
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/oldButton"
+                android:layout_width="300sp"
+                android:layout_height="140sp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/text_topButton"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/madButton"
+                android:layout_width="300dp"
+                android:layout_height="140sp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="casual"
+                android:text="@string/text_botButton"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="523dp"
+        android:layout_weight="1"
+        android:text="@string/text_hideButton"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
 </RelativeLayout>

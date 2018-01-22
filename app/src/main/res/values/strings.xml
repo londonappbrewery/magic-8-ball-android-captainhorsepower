@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Magic Eight Ball</string>
+    <string name="text_topButton">Ask old ball</string>
+    <string name="text_botButton">Ask mad ball</string>
+    <string name="text_atTheTop">Choose Your Destiny</string>
+    <string name="text_hideButton">put magic ball into pocket</string>
 </resources>
